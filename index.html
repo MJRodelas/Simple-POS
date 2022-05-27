@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple POS</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+        
+        <h2>MJ's Restaurant</h2>
+        
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Grand Total</th>
+            
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td id="burger-price">49</td>
+            <td><input type="text" id="burger-qty" onchange="solveBurgerTotal()"></td>
+            <td><label id="burger-total">0.00</label></td>
+            <td id="grand-total">0.00</td>
+          </tr>
+          <tr>
+            <td>Fries</td>
+            <td  id="fries-price">35</td>
+            <td><input type="text" id="fries-qty" onchange="solveFriesTotal()"></td>
+            <td><label id="fries-total">0.00</label></td>
+            <th>Cash</th>
+          </tr>
+          <tr>
+            <td>Fried Chicken</td>
+            <td id="friedchicken-price">55</td>
+            <td><input type="text" id="friedchicken-qty" onchange="solveFriedChickenTotal()"></td>
+            <td><label id="friedchicken-total">0.00</label></td>
+            <td ><input type="text" id="cash" onchange="solveChange()"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>Change</th>
+          </tr> 
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id ="change">0.00</td>
+          </tr>           
+        </table>
+
+        <script src="index.js"></script>
+
+</body>
+</html>
