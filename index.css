@@ -39,14 +39,14 @@ table {
 {
     font-size:12px;
     padding: 5px;
-    width: 20%;
-    text-align: center
+    width: 50%;
+    text-align: center;
+    font-weight:bold;
 }
 body{
   background-image: url('Images/pexels-pixabay-262047.jpg');
   background-size: 100%;
   background-repeat:no-repeat;
-  
 }
 
 .product{
