@@ -8,10 +8,18 @@
 </head>
 <body>
  
-    <select id="container-el">
-        <option value="volvo">Volvo</option>
+    <select id="container-el" onChange="updateProduct()">
     </select>
+    <!-- change to text or hidden for troubleshooting -->
+    <input type="text" id="selected-product">
 
-    <script src="index.js"></script>
+    <button onclick="submit()">SUBMIT</button>
+    
+    <div id="list-el">
+        
+    </div>
+
+    
+<script src="index.js"></script>
 </body>
 </html>
