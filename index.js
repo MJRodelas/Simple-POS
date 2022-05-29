@@ -55,8 +55,8 @@ function solveGrandTotal(){
 
 function solveChange(){
     console.log("cash:"+cashEl.value)
-    console.log("total:"+grandTotalT)
-    changeT = cashEl - grandTotalT
+    console.log("Grand Total:"+grandTotalT)
+    changeT = cashEl.value - grandTotalT
     console.log(changeT)
     changeEl.textContent = changeT
 }
